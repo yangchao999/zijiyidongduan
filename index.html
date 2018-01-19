@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/flexible.js"></script>
+    <script src="js/flexible_css.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/leftTime.min.js"></script>
+    <script src="js/iconfont.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/swiper.min.js"></script>
+</head>
+<body style="background: rgb(234, 234, 234);">
+<header>
+    <div class="logo">
+        <img src="img/logo.png" alt="">
+    </div>
+    <div class="header-from">
+        <img src="img/header-fangdajing.png" alt="">
+        搜索商品、品牌
+    </div>
+    <div class="header-right">
+        <a href="index4.html" style="color: #ec4242;">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-nav_my"></use>
+            </svg>
+        </a>
+
+    </div>
+</header>
+<div class="lunbotu">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/lunbotu1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/lunbotu2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/lunbotu4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/lunbotu3.jpg" alt=""></div>
+
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true,
+        },
+    });
+</script>
+<div class="fenlei">
+  <div class="fenlei-one">
+      <div class="fenlei-img"><svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-jiaju"></use>
+      </svg></div>
+      <div class="fenlei-text">家具</div>
+  </div>
+  <div class="fenlei-one">
+      <div class="fenlei-img"><svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-dianqi"></use>
+      </svg></div>
+      <div class="fenlei-text">电器</div>
+  </div>
+  <div class="fenlei-one">
+      <div class="fenlei-img"><svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-jiafang"></use>
+      </svg></div>
+      <div class="fenlei-text">家纺</div>
+  </div>
+  <div class="fenlei-one">
+      <div class="fenlei-img">
+          <a href="index2.html" style="color: #ec4242;">
+              <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-leimupinleifenleileibie"></use>
+             </svg>
+          </a>
+
+      </div>
+      <div class="fenlei-text">分类</div>
+  </div>
+</div>
+<div class="qianggou">
+    <div class="qianggou-top">
+        <div class="qianggou-top-text">
+            限时抢购
+        </div>
+        <div class="qianggou-top-time">
+                    <div class="data-show-box" id="dateShow1">
+                        <span class="date-tiem-span d">00</span>天
+                        <span class="date-tiem-span h">00</span>时
+                        <span class="date-tiem-span m">00</span>分
+                        <span class="date-s-span s">00</span>秒
+                    </div>
+            <script type="text/javascript">
+                $(function(){
+                    //日期倒计时
+                    $.leftTime("2018/01/6 23:45:24",function(d){
+                        if(d.status){
+                            var $dateShow1=$("#dateShow1");
+                            $dateShow1.find(".d").html(d.d);
+                            $dateShow1.find(".h").html(d.h);
+                            $dateShow1.find(".m").html(d.m);
+                            $dateShow1.find(".s").html(d.s);
+                        }
+                    });
+                });
+            </script>
+
+        </div>
+    </div>
+    <div class="qianggou-zhong">
+        <div class="qianggou-shop">
+            <div class="qianggou-shop-img"><img src="img/qianggou1.jpg" alt=""></div>
+            <div class="qianggou-shop-text">
+                <div class="qianggou-name">
+                    DOLCE GUSTO EDG 466
+                </div>
+                <div class="qianggou-money">
+                    <span>￥ 1090.00</span>
+                    <span>￥ 980.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="qianggou-shop" style="margin-left: 0.4rem">
+            <div class="qianggou-shop-img"><img src="img/qianggou2.jpg" alt=""></div>
+            <div class="qianggou-shop-text">
+                <div class="qianggou-name">
+                    DOLCE GUSTO EDG 466
+                </div>
+                <div class="qianggou-money">
+                    <span>￥ 1090.00</span>
+                    <span>￥ 980.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="qianggou-shop">
+            <div class="qianggou-shop-img"><img src="img/qianggou3.jpg" alt=""></div>
+            <div class="qianggou-shop-text">
+                <div class="qianggou-name">
+                    DOLCE GUSTO EDG 466
+                </div>
+                <div class="qianggou-money">
+                    <span>￥ 1090.00</span>
+                    <span>￥ 980.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="qianggou-shop" style="margin-left: 0.4rem">
+            <div class="qianggou-shop-img"><img src="img/qianggou4.jpg" alt=""></div>
+            <div class="qianggou-shop-text">
+                <div class="qianggou-name">
+                    DOLCE GUSTO EDG 466
+                </div>
+                <div class="qianggou-money">
+                    <span>￥ 1090.00</span>
+                    <span>￥ 980.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="qianggou-more">
+        更多>>
+    </div>
+</div>
+<div class="newshop">
+    <div class="newshop-top">
+        新品推荐
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/xingping1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/xingping2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/xingping3.jpg" alt=""></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <script>
+            var swiper = new Swiper('.newshop .swiper-container', {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows : true,
+                },
+                pagination: {
+                    el: '.newshop .swiper-pagination',
+                },
+            });
+        </script>
+    </div>
+</div>
+    <div class="remai">
+    <div class="remai-top">
+        今日特卖
+    </div>
+    <div class="remai-shop">
+        <div class="remai-img"><img src="img/remai1.jpg" alt=""></div>
+        <div class="remai-text">博洋家纺-品质建材</div>
+    </div>
+    <div class="remai-shop">
+        <div class="remai-img"><img src="img/remai2.jpg" alt=""></div>
+        <div class="remai-text">新年住新家-全屋家具</div>
+    </div>
+    <div class="remai-shop">
+        <div class="remai-img"><img src="img/remai3.jpg" alt=""></div>
+        <div class="remai-text">单门小冰箱小型家用节能</div>
+    </div>
+    <div class="remai-shop">
+        <div class="remai-img"><img src="img/remai4.jpg" alt=""></div>
+        <div class="remai-text">4K高清电视</div>
+    </div>
+</div>
+<div class="tuijian">
+    <div class="tuijian-top">
+        <ul>
+            <li class="active">猜你喜欢</li>
+            <li>家具</li>
+            <li>电器</li>
+            <li>家纺</li>
+        </ul>
+    </div>
+    <div class="tuijian-zhong">
+        <div class="tuijian-fen active">
+            <div class="tuijian-shop">
+                <div class="tuijian-img"><img src="img/tujian-1.jpg" alt=""></div>
+                <div class="tuijan-text">小米净水器</div>
+                <div class="tuijian-jiage">￥1999.0</div>
+                <div class="tuijian-goumai">购买</div>
+            </div>
+            <div class="tuijian-shop" style="margin-left: 0.2rem">
+                <div class="tuijian-img"><img src="img/tujian-2.jpg" alt=""></div>
+                <div class="tuijan-text">TCL D55A620U</div>
+                <div class="tuijian-jiage">￥2999.00</div>
+                <div class="tuijian-goumai">购买</div>
+            </div>
+            <div class="tuijian-shop">
+                <div class="tuijian-img"><img src="img/tujian-3.jpg" alt=""></div>
+                <div class="tuijan-text">三星 UA65KUC30SJXXZ</div>
+                <div class="tuijian-jiage">￥1560.0</div>
+                <div class="tuijian-goumai">购买</div>
+            </div>
+            <div class="tuijian-shop" style="margin-left: 0.2rem">
+                <div class="tuijian-img"><img src="img/tujian-4.jpg" alt=""></div>
+                <div class="tuijan-text">美的油烟机</div>
+                <div class="tuijian-jiage">￥2499.0</div>
+                <div class="tuijian-goumai">购买</div>
+            </div>
+            <div class="tuijian-shop">
+                <div class="tuijian-img"><img src="img/tujian-5.jpg" alt=""></div>
+                <div class="tuijan-text">
+                    韩式田园简约书桌</div>
+                <div class="tuijian-jiage">￥1780.0</div>
+                <div class="tuijian-goumai">购买</div>
+            </div>
+            <div class="tuijian-shop" style="margin-left: 0.2rem">
+                <div class="tuijian-img"><img src="img/tujian-6.jpg" alt=""></div>
+                <div class="tuijan-text">
+                    聚欧派橱柜整体橱柜</div>
+                <div class="tuijian-jiage">￥12888.0</div>
+                <div class="tuijian-goumai">购买</div>
+            </div>
+        </div>
+        <div class="tuijian-fen">
+            <div class="tuijian-shop">
+                <div class="tuijian-img"><img src="img/tujian-1.jpg" alt=""></div>
+                <div class="tuijan-text">小米净水器</div>
+                <div class="tuijian-jiage">￥1999.0</div>
+                <div class="tuijian-goumai">购买</div>
+            </div>
+            <div class="tuijian-shop" style="margin-left: 0.2rem">
+                <div class="tuijian-img"><img src="img/tujian-1.jpg" alt=""></div>
+                <div class="tuijan-text">小米净水器</div>
+                <div class="tuijian-jiage">￥1999.0</div>
+                <div class="tuijian-goumai">购买</div>
+            </div>
+            <div class="tuijian-shop">
+                <div class="tuijian-img"><img src="img/tujian-1.jpg" alt=""></div>
+                <div class="tuijan-text">小米净水器</div>
+                <div class="tuijian-jiage">￥1999.0</div>
+                <div class="tuijian-goumai">购买</div>
+            </div>
+            <div class="tuijian-shop" style="margin-left: 0.2rem">
+                <div class="tuijian-img"><img src="img/tujian-1.jpg" alt=""></div>
+                <div class="tuijan-text">小米净水器</div>
+                <div class="tuijian-jiage">￥1999.0</div>
+                <div class="tuijian-goumai">购买</div>
+            </div>
+            <div class="tuijian-shop">
+                <div class="tuijian-img"><img src="img/tujian-1.jpg" alt=""></div>
+                <div class="tuijan-text">小米净水器</div>
+                <div class="tuijian-jiage">￥1999.0</div>
+                <div class="tuijian-goumai">购买</div>
+            </div>
+            <div class="tuijian-shop" style="margin-left: 0.2rem">
+                <div class="tuijian-img"><img src="img/tujian-1.jpg" alt=""></div>
+                <div class="tuijan-text">小米净水器</div>
+                <div class="tuijian-jiage">￥1999.0</div>
+                <div class="tuijian-goumai">购买</div>
+            </div>
+        </div>
+        <div class="tuijian-fen">
+            <div class="tuijian-shop">
+                <div class="tuijian-img"><img src="img/tujian-1.jpg" alt=""></div>
+                <div class="tuijan-text">小米净水器</div>
+                <div class="tuijian-jiage">￥1999.0</div>
+                <div class="tuijian-goumai">购买</div>
+            </div>
+            <div class="tuijian-shop" style="margin-left: 0.2rem">
+                <div class="tuijian-img"><img src="img/tujian-1.jpg" alt=""></div>
+                <div class="tuijan-text">小米净水器</div>
+                <div class="tuijian-jiage">￥1999.0</div>
+                <div class="tuijian-goumai">购买</div>
+            </div>
+            <div class="tuijian-shop">
+                <div class="tuijian-img"><img src="img/tujian-1.jpg" alt=""></div>
+                <div class="tuijan-text">小米净水器</div>
+                <div class="tuijian-jiage">￥1999.0</div>
+                <div class="tuijian-goumai">购买</div>
+            </div>
+            <div class="tuijian-shop" style="margin-left: 0.2rem">
+                <div class="tuijian-img"><img src="img/tujian-1.jpg" alt=""></div>
+                <div class="tuijan-text">小米净水器</div>
+                <div class="tuijian-jiage">￥1999.0</div>
+                <div class="tuijian-goumai">购买</div>
+            </div>
+            <div class="tuijian-shop">
+                <div class="tuijian-img"><img src="img/tujian-1.jpg" alt=""></div>
+                <div class="tuijan-text">小米净水器</div>
+                <div class="tuijian-jiage">￥1999.0</div>
+                <div class="tuijian-goumai">购买</div>
+            </div>
+            <div class="tuijian-shop" style="margin-left: 0.2rem">
+                <div class="tuijian-img"><img src="img/tujian-1.jpg" alt=""></div>
+                <div class="tuijan-text">小米净水器</div>
+                <div class="tuijian-jiage">￥1999.0</div>
+                <div class="tuijian-goumai">购买</div>
+            </div>
+        </div>
+        <div class="tuijian-fen">
+            <div class="tuijian-shop">
+                <div class="tuijian-img"><img src="img/tujian-1.jpg" alt=""></div>
+                <div class="tuijan-text">小米净水器</div>
+                <div class="tuijian-jiage">￥1999.0</div>
+                <div class="tuijian-goumai">购买</div>
+            </div>
+            <div class="tuijian-shop" style="margin-left: 0.2rem">
+                <div class="tuijian-img"><img src="img/tujian-1.jpg" alt=""></div>
+                <div class="tuijan-text">小米净水器</div>
+                <div class="tuijian-jiage">￥1999.0</div>
+                <div class="tuijian-goumai">购买</div>
+            </div>
+            <div class="tuijian-shop">
+                <div class="tuijian-img"><img src="img/tujian-1.jpg" alt=""></div>
+                <div class="tuijan-text">小米净水器</div>
+                <div class="tuijian-jiage">￥1999.0</div>
+                <div class="tuijian-goumai">购买</div>
+            </div>
+            <div class="tuijian-shop" style="margin-left: 0.2rem">
+                <div class="tuijian-img"><img src="img/tujian-1.jpg" alt=""></div>
+                <div class="tuijan-text">小米净水器</div>
+                <div class="tuijian-jiage">￥1999.0</div>
+                <div class="tuijian-goumai">购买</div>
+            </div>
+            <div class="tuijian-shop">
+                <div class="tuijian-img"><img src="img/tujian-1.jpg" alt=""></div>
+                <div class="tuijan-text">小米净水器</div>
+                <div class="tuijian-jiage">￥1999.0</div>
+                <div class="tuijian-goumai">购买</div>
+            </div>
+            <div class="tuijian-shop" style="margin-left: 0.2rem">
+                <div class="tuijian-img"><img src="img/tujian-1.jpg" alt=""></div>
+                <div class="tuijan-text">小米净水器</div>
+                <div class="tuijian-jiage">￥1999.0</div>
+                <div class="tuijian-goumai">购买</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script>
+    $(".tuijian-top ul li").click(function () {
+        var s=$(this).index();
+        console.log(s);
+        $(".tuijian .tuijian-zhong .tuijian-fen").eq(s).addClass("active").siblings().removeClass("active");
+        $(this).addClass("active").siblings().removeClass("active");
+    })
+</script>
+<div class="footer">
+    <div class="footer-s">
+
+        <div>电脑版</div>
+        <div>用户反馈</div>
+    </div>
+    <div class="footer-x">2016 北 B2-205622824 服务中心</div>
+</div>
+</body>
+</html>

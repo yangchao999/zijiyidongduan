@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/flexible.js"></script>
+    <script src="js/flexible_css.js"></script>
+    <script src="js/iconfont.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="img/logo.png" alt="">
+        </a>
+
+    </div>
+
+    <div class="header-right">
+            <img class="list" src="img/header-fangdajing.png" alt="" style="    width: 0.6rem;margin-left: 6rem;margin-top: 0.2rem;">
+    </div>
+</header>
+<div class="sousuo">
+    <div class="sousuo-top">
+        <div class="sousuo-left"><img src="img/sousuo-back.png" alt="" style="width: 0.6rem"></div>
+        <div class="sousuo-form"><img src="img/header-fangdajing.png" alt="">搜索商品/品牌</div>
+    </div>
+    <ul>
+        <li>商品分类</li>
+        <li>冰箱</li>
+        <li>空调</li>
+        <li>洗衣机</li>
+        <li>平板电视</li>
+        <li>厨房电器</li>
+        <li>生活电器</li>
+        <li>住宅家具</li>
+        <li>家装主材</li>
+        <li>灯具灯饰</li>
+        <li>电子电工</li>
+        <li>全屋定制</li>
+        <li>装修设计</li>
+    </ul>
+</div>
+<script>
+    $(".list").click(function(){
+        $(".sousuo").animate({"left":"0"});
+        $(".black").fadeIn();
+    });
+
+    $(".sousuo-left").click(function(){
+        $(".sousuo").animate({"left":"-7.5rem"});
+        $(".black").fadeOut();
+    })
+</script>
+<div class="liebiaoye">
+<div class="black"></div>
+    <div class="pingpai">
+     <div class="pingpai-top">
+         <span class="pingpai-top-text">品牌</span>
+         <div style="left: 2.5rem;"></div>
+         <div style="right: 2.5rem;"></div>
+
+     </div>
+        <div class="pingpai-top-img">
+            <ul>
+                <li><img src="img/pingpai1.jpg" alt=""></li>
+                <li><img src="img/pingpai2.jpg" alt=""></li>
+                <li><img src="img/pingpai3.jpg" alt=""></li>
+                <li><img src="img/pingpai4.jpg" alt=""></li>
+                <li><img src="img/pingpai5.jpg" alt=""></li>
+                <li><img src="img/pingpai6.jpg" alt=""></li>
+                <li><img src="img/pingpai7.jpg" alt=""></li>
+                <li><img src="img/pingpai8.jpg" alt=""></li>
+                <li><img src="img/pingpai9.jpg" alt=""></li>
+            </ul>
+        </div>
+        <div class="more">
+            加载更多
+        </div>
+    </div>
+    <div class="reping">
+        <div class="pingpai-top">
+            <span class="pingpai-top-text">热销</span>
+            <div style="left: 2.5rem;"></div>
+            <div style="right: 2.5rem;"></div>
+
+        </div>
+     <ul>
+         <li><a href="index3.html">
+             <img src="img/shop-1.jpg" alt="">
+             <span>AUX空调</span>
+         </a></li>
+         <li><a href="index3.html">
+             <img src="img/shop-2.jpg" alt="">
+             <span>AUX空调</span>
+         </a></li>
+         <li><a href="index3.html">
+             <img src="img/shop-3.jpg" alt="">
+             <span>海尔冰箱</span>
+         </a></li>
+         <li><a href="index3.html">
+             <img src="img/shop-4.jpg" alt="">
+             <span>电视</span>
+         </a></li>
+         <li><a href="index3.html">
+             <img src="img/shop-5.jpg" alt="">
+             <span>饮水机</span>
+         </a></li>
+         <li><a href="index3.html">
+             <img src="img/shop-6.jpg" alt="">
+             <span>地毯</span>
+         </a></li>
+     </ul>
+
+    </div>
+    <div class="more">
+        加载更多
+    </div>
+</div>
+</body>
+</html>
